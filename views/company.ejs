@@ -1,0 +1,91 @@
+<%- include("header") -%>
+
+
+
+    <div class="header">
+        <div class="wrap">
+            <div class="header-bot">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt="#"></a>
+                </div>
+
+
+                <div class="cart">
+
+                    <div class="menu-main">
+
+                        <!-- echo '<ul class="dc_css3_menu">' ;
+					 echo '<li class="active"><a href="indexlogin.php">Home</a></li>' ;
+					 echo '<li><a href="services.php">Brands</a></li>' ;
+					 echo '<li><a href="booking.php">Book</a></li>' ;
+                     echo '<li><a href="orders.php">Orders</a></li>';
+                     echo '<li><a href="logout.php">logout</a></li>' ;
+		     	     echo '</ul>' ; -->
+
+                        <ul class="dc_css3_menu">
+                            <li class="active"><a href="/">Home</a></li>
+                            <li><a href="about">About</a></li>
+                            <li><a href="services">Brands</a></li>
+                            <li><a href="contact">Contact</a></li>
+                            <li><a href="login">Login</a></li>
+                            <li><a href="register">Signup</a></li>
+                        </ul>
+
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <div class="content-box1">
+            <div class="wrap">
+                <div class="banner2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="main-content">
+        <div class="wrap">
+            <div class="main-box">
+                <div class="box_wrapper">
+                    <h1><%=companyName%></h1>
+                </div>
+
+                <div class="section group">
+
+                        <% for(let i=0;i<n;i++){%>
+                                <div class="col_1_of_4 span_1_of_4">
+                                    <img src=<%=result[i].imgsrc%> alt="" style="width: 287px; height : 150px;" />
+                                    <div class="grid_desc">
+                                        <p class="title">
+                                            <%=result[i].Title%>
+                                        </p>
+                                    </div>
+                                    <div class="Details">
+                                        <a href=<%=result[i].ref%> title="Lorem ipsum dolor sit amet, consect etuer"
+                                            class="button">Details <span></span></a>
+                                    </div>
+                                </div>
+
+                                <%}%>
+                                   
+                                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("footer") -%>

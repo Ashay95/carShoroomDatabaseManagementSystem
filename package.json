@@ -1,0 +1,24 @@
+{
+  "name": "carshowroom_mongo",
+  "version": "1.0.0",
+  "description": "\"Car Showroom Management system\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rakesh kundan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jquery": "^3.7.0",
+    "jsdom": "^22.1.0",
+    "mongoose": "^7.3.1",
+    "nodemon": "^1.14.9",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^8.0.0"
+  }
+}
